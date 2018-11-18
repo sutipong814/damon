@@ -336,7 +336,7 @@ def helpset():
 ╠❋►เทส
 ╠❋►เปิดหมด
 ╠❋►ปิดหมด
-╠❋►สปีด ➠sp➠Sp➠speed➠Speed
+╠❋►สปีด ➠sp
 ╠❋►โทร
 ╠❋►สแปม
 ╠❋►รีบอท
@@ -360,7 +360,7 @@ def helpset():
 ╠❋►เตะแบน
 ╠❋►ล้างหี
 ╠❋►สอย
-╠❋►เตะ @ ➠จุก @ ➠
+╠❋►เตะ @ ➠จุก @
 ╠❋►ชื่อ: ข้อความ ➠เปลี่ยนชื่อ
 ╠❋►ตัส: ข้อความ ➠เปลี่ยนตัส
 ╚══════════════"""
@@ -613,7 +613,7 @@ def lineBot(op):
                             mc += "◉ " + line.getContact(mi_d).displayName + "\n"
                         line.sendMessage(to, mc) 
 #===========
-                elif "sp","Sp" == msg.text.lower():
+                elif "sp" == msg.text.lower():
                     line.sendMessage(to,"「ความเร็ว...」\n███▒39%\n██████▒69%\n██████████▒99%\n0.0000000000000000 second")
                     line.sendMessage(to,"0.0000000000000000 second")  
                     line.sendMessage(to,"(｡◕‿◕｡)")             
@@ -729,7 +729,7 @@ def lineBot(op):
                             kk.leaveGroup(to)
                         except:
                             pass
-                elif text.lower() == 'สปีด','Speed':
+                elif text.lower() == 'สปีด':
                     start = time.time()
                     line.sendMessage(to,"ความเร็วของบอท..")
                     elapsed_time = time.time() - start
