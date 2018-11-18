@@ -1650,7 +1650,7 @@ def lineBot(op):
                         for i in group.members[a*20 : (a+1)*20]:
                             b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
                             s += 7
-                            txt += '╠❋►@Alin \n'
+                            txt += '@Alin \n'
                         line.sendMessage(to, text=txt, contentMetadata={'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
                         line.sendMessage(to, "╠❋►จำนวน {} คน".format(str(len(nama)))) 
                 elif text.lower() == 'แทค':
@@ -1664,7 +1664,7 @@ def lineBot(op):
                         for i in group.members[a*20 : (a+1)*20]:
                             b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
                             s += 7
-                            txt += '╠❋►@Alin \n'
+                            txt += '@Alin \n'
                         line.sendMessage(to, text=txt, contentMetadata={'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
                         line.sendMessage(to, "╠❋►ทั้งหมด {} คน".format(str(len(nama))))  
                 elif text.lower() == 'ตั้งเวลา':
